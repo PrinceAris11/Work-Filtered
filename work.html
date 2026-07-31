@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Work</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="work.html" class="active">Work</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="work-section">
+            <h2>My Work</h2>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+                <button class="filter-btn" data-filter="creative-coding">Creative Coding</button>
+                <button class="filter-btn" data-filter="freelance">Freelance</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- AI Projects -->
+                <div class="project-card" data-category="ai">
+                    <h3>AI Image Generator</h3>
+                    <p>A web app that generates images from text using Stable Diffusion.</p>
+                    <span class="tag">AI</span>
+                </div>
+                <div class="project-card" data-category="ai">
+                    <h3>Chatbot Assistant</h3>
+                    <p>An intelligent chatbot built with LLMs to assist with customer support.</p>
+                    <span class="tag">AI</span>
+                </div>
+
+                <!-- Creative Coding Projects -->
+                <div class="project-card" data-category="creative-coding">
+                    <h3>Generative Art Platform</h3>
+                    <p>Interactive web canvas where users can create generative art.</p>
+                    <span class="tag">Creative Coding</span>
+                </div>
+                <div class="project-card" data-category="creative-coding">
+                    <h3>Audio Visualizer</h3>
+                    <p>A webGL based audio visualizer that reacts to user music.</p>
+                    <span class="tag">Creative Coding</span>
+                </div>
+
+                <!-- Freelance Projects -->
+                <div class="project-card" data-category="freelance">
+                    <h3>E-commerce Website</h3>
+                    <p>A custom e-commerce solution built for a local boutique.</p>
+                    <span class="tag">Freelance</span>
+                </div>
+                <div class="project-card" data-category="freelance">
+                    <h3>Restaurant Booking App</h3>
+                    <p>A mobile-responsive web app for booking tables at a restaurant.</p>
+                    <span class="tag">Freelance</span>
+                </div>
+
+                <!-- Mixed/Other -->
+                <div class="project-card" data-category="ai creative-coding">
+                    <h3>AI Art Exhibition</h3>
+                    <p>A virtual gallery showcasing AI-generated creative coding pieces.</p>
+                    <span class="tag">AI</span> <span class="tag">Creative Coding</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
